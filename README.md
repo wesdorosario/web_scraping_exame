@@ -15,7 +15,7 @@
 
 2. Instale as bibliotecas necessárias, se ainda não estiverem instaladas:
 
-    2.1 É (ALTAMENTE)recomendável criar um ambiente virtual para evitar conflitos de dependências, execute os seguintes comandos no terminal:
+    2.1 É (ALTAMENTE) recomendável criar um ambiente virtual para evitar conflitos de dependências, execute os seguintes comandos no terminal:
         "python -m venv venv" ou "python3 -m venv venv" (dependendo do seu sistema operacional)
         Ative o ambiente virtual:
         # Linux/MacOS: "source venv/bin/activate"  
