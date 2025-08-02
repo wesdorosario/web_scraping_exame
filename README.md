@@ -11,28 +11,48 @@
 - Salva as informações em um arquivo de texto chamado "resultado_web_scraping.txt" automaticamente de forma organizada.
 
 # Como usar:
-1. Certifique-se de ter o Python instalado em seu computador. (A versão usada neste código foi Python 3.12.3)
+1. Certifique-se de ter o Python instalado em seu computador.  
+   (A versão usada neste código foi Python 3.12.3)
 
 2. Instale as bibliotecas necessárias, se ainda não estiverem instaladas:
 
-    2.1 É (ALTAMENTE) recomendável criar um ambiente virtual para evitar conflitos de dependências, execute os seguintes comandos no terminal:
-        "python -m venv venv" ou "python3 -m venv venv" (dependendo do seu sistema operacional)
-        Ative o ambiente virtual:
-        # Linux/MacOS: "source venv/bin/activate"  
-        # No Windows use: "venv\Scripts\activate"
+### 2.1 Crie um ambiente virtual (ALTAMENTE recomendado)
 
-    2.2 Você pode usar o arquivo `requirements.txt` para instalar as dependências, execute o seguinte comando no terminal:
-        "pip install -r requirements.txt"
+**Windows:**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+**Linux/MacOS:**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 2.2 Instale as dependências com:
+
+```bash
+pip install -r requirements.txt
+```
 
 3. Usando o programa:
-    3.1 Vá até o arquivo `main.py` e insira a URL da página que deseja raspar na variável `url`.
 
-    3.2 Execute o script
-    
-4. Após a execução, verifique o arquivo `resultado_web_scraping.txt` para ver 
-as publicações extraídas.
+#### 3.1 Edite o arquivo `main.py` e insira a URL da página que deseja raspar na variável `url`.
 
-5. Você usar quantas URLs quiser, basta alterar a variável `url` no código e executar novamente. Porém muita atenção pois a cada raspagem o arquivo `resultado_web_scraping.txt` será sobrescrito, ou seja, as publicações anteriores serão perdidas.
+#### 3.2 Execute o script com:
+
+```bash
+python main.py
+```
+
+4. Após a execução, verifique o arquivo `resultado_web_scraping.txt` para ver as publicações extraídas.
+
+5. Você pode usar quantas URLs quiser. Basta alterar a variável `url` no código e executar novamente.
+
+⚠️ **Atenção:** A cada raspagem o arquivo `resultado_web_scraping.txt` será sobrescrito, ou seja, as publicações anteriores serão perdidas.
 
 # Observações:
 - Esse código foi projetado para funcionar com a estrutura atual do site da Exame. Se o site for alterado, pode ser necessário ajustar o código. Então basicamente basta escolher um tópico de notícias e seguir as instruções acima.
